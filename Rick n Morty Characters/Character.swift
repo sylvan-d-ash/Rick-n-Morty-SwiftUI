@@ -15,7 +15,7 @@ struct Character: Decodable, Identifiable {
         case unknown = "unknown"
     }
 
-    enum Status: String, Decodable {
+    enum Status: String, Decodable, CaseIterable {
         case alive = "Alive"
         case dead = "Dead"
         case unknown = "Unknown"
