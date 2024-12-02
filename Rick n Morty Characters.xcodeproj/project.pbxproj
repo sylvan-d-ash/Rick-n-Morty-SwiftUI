@@ -14,6 +14,7 @@
 		5ECD4E542CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E532CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift */; };
 		5ECD4E5E2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E5D2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift */; };
 		5ECD4E602CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */; };
+		5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E6C2CFDF132002715E5 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		5ECD4E592CFDF102002715E5 /* Rick n Morty CharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick n Morty CharactersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECD4E5D2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersUITests.swift; sourceTree = "<group>"; };
 		5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5ECD4E6C2CFDF132002715E5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				5ECD4E422CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift */,
 				5ECD4E442CFDF100002715E5 /* ContentView.swift */,
+				5ECD4E6C2CFDF132002715E5 /* Character.swift */,
 				5ECD4E462CFDF102002715E5 /* Assets.xcassets */,
 				5ECD4E482CFDF102002715E5 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */,
 				5ECD4E452CFDF100002715E5 /* ContentView.swift in Sources */,
 				5ECD4E432CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift in Sources */,
 			);
