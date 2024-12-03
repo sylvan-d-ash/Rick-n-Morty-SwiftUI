@@ -11,6 +11,8 @@ struct ContentView: View {
     private let statuses = Character.Status.allCases
     @State private var selectedStatus: Character.Status?
 
+    private let characters = [1, 2, 3, 4, 5, 6, 7, 8]
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -41,10 +43,18 @@ struct ContentView: View {
                     }
                     Spacer()
                 }
+                .padding(.horizontal)
 
-                Spacer()
+                List {
+                    ForEach(characters, id: \.self) { character in
+                        CharacterRow()
+                            .listRowSeparator(.hidden)
+                            .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
+                    }
+                }
+                .listStyle(PlainListStyle())
+                .padding(.horizontal)
             }
-            .padding()
             .navigationTitle("Characters")
         }
     }
