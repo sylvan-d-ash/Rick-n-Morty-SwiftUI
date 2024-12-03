@@ -19,6 +19,7 @@
 		5ECD4E712CFF26DE002715E5 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */; };
 		5ECD4E732CFFA02B002715E5 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */; };
 		5ECD4E752CFFA608002715E5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E742CFFA608002715E5 /* DataService.swift */; };
+		5ECD4E772CFFB49C002715E5 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E762CFFB49C002715E5 /* FiltersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 		5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		5ECD4E742CFFA608002715E5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5ECD4E762CFFB49C002715E5 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				5ECD4E422CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift */,
 				5ECD4E442CFDF100002715E5 /* ContentView.swift */,
+				5ECD4E762CFFB49C002715E5 /* FiltersView.swift */,
 				5ECD4E742CFFA608002715E5 /* DataService.swift */,
 				5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */,
 				5ECD4E6C2CFDF132002715E5 /* Character.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD4E772CFFB49C002715E5 /* FiltersView.swift in Sources */,
 				5ECD4E732CFFA02B002715E5 /* CharactersViewModel.swift in Sources */,
 				5ECD4E752CFFA608002715E5 /* DataService.swift in Sources */,
 				5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */,
