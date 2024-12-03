@@ -16,6 +16,7 @@
 		5ECD4E602CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */; };
 		5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E6C2CFDF132002715E5 /* Character.swift */; };
 		5ECD4E6F2CFF1210002715E5 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E6E2CFF1210002715E5 /* CharacterRow.swift */; };
+		5ECD4E712CFF26DE002715E5 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5ECD4E6C2CFDF132002715E5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5ECD4E6E2CFF1210002715E5 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				5ECD4E442CFDF100002715E5 /* ContentView.swift */,
 				5ECD4E6C2CFDF132002715E5 /* Character.swift */,
 				5ECD4E6E2CFF1210002715E5 /* CharacterRow.swift */,
+				5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */,
 				5ECD4E462CFDF102002715E5 /* Assets.xcassets */,
 				5ECD4E482CFDF102002715E5 /* Preview Content */,
 			);
@@ -265,6 +268,7 @@
 			files = (
 				5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */,
 				5ECD4E452CFDF100002715E5 /* ContentView.swift in Sources */,
+				5ECD4E712CFF26DE002715E5 /* CharacterDetails.swift in Sources */,
 				5ECD4E6F2CFF1210002715E5 /* CharacterRow.swift in Sources */,
 				5ECD4E432CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift in Sources */,
 			);
