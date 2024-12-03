@@ -47,13 +47,17 @@ struct ContentView: View {
 
                 List {
                     ForEach(characters, id: \.self) { character in
-                        NavigationLink {
-                            CharacterDetails()
-                        } label: {
+                        ZStack {
+                            NavigationLink(destination: CharacterDetails()) {
+                                EmptyView()
+                            }
+                            .opacity(0)
+
                             CharacterRow()
-                                .listRowSeparator(.hidden)
-                                .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
                         }
+                        .listRowSeparator(.hidden)
+                        .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
+                        .listRowBackground(Color.clear)
                     }
                 }
                 .listStyle(PlainListStyle())
