@@ -10,13 +10,19 @@ import SwiftUI
 struct CharacterDetails: View {
     @Environment(\.dismiss)  private var dismiss
 
+    var character: Character
+
     var body: some View {
         VStack(spacing: 20) {
             ZStack(alignment: .topLeading) {
-                Image("toxic_rick")
-                    .resizable()
-                    .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                AsyncImage(url: URL(string: character.image)) { image in
+                    image
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(RoundedRectangle(cornerRadius: 20))
+                } placeholder: {
+                    ProgressView()
+                }
 
                 Button(action: {
                     dismiss()
@@ -31,13 +37,13 @@ struct CharacterDetails: View {
 
             VStack {
                 HStack {
-                    Text("Zephyr")
+                    Text(character.name)
                         .font(.title)
                         .fontWeight(.bold)
 
                     Spacer()
 
-                    Text("Status")
+                    Text(character.status.rawValue)
                         .font(.subheadline)
                         .padding(.horizontal, 12)
                         .padding(.vertical, 6)
@@ -48,9 +54,9 @@ struct CharacterDetails: View {
                 }
 
                 HStack(spacing: 5) {
-                    Text("Elf")
+                    Text(character.species)
                     Text("•")
-                    Text("Male")
+                    Text(character.gender.rawValue)
                         .foregroundStyle(.gray)
                     Spacer()
                 }
@@ -62,7 +68,7 @@ struct CharacterDetails: View {
                 Text("Location :")
                     .fontWeight(.bold)
 
-                Text("Earth")
+                Text(character.location)
                     .font(.subheadline)
                 Spacer()
             }
@@ -76,5 +82,14 @@ struct CharacterDetails: View {
 }
 
 #Preview {
-    CharacterDetails()
+    let character = Character(id: 1,
+                              name: "Toxic Rick",
+                              species: "Humanoid",
+                              image: "https://rickandmortyapi.com/api/character/avatar/361.jpeg",
+                              status: .dead,
+                              gender: .male,
+                              location: "Earth"
+    )
+
+    return CharacterDetails(character: character)
 }
