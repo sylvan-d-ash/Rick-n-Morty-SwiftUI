@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CharacterDetails: View {
+    @Environment(\.dismiss)  private var dismiss
+
     var body: some View {
         VStack(spacing: 20) {
             ZStack(alignment: .topLeading) {
@@ -17,7 +19,7 @@ struct CharacterDetails: View {
                     .clipShape(RoundedRectangle(cornerRadius: 20))
 
                 Button(action: {
-                    // handle back action
+                    dismiss()
                 }) {
                     Image(systemName: "arrow.left")
                         .foregroundStyle(.black)
@@ -68,6 +70,7 @@ struct CharacterDetails: View {
 
             Spacer()
         }
+        .toolbar(.hidden, for: .navigationBar)
         .ignoresSafeArea()
     }
 }

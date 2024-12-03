@@ -47,9 +47,13 @@ struct ContentView: View {
 
                 List {
                     ForEach(characters, id: \.self) { character in
-                        CharacterRow()
-                            .listRowSeparator(.hidden)
-                            .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
+                        NavigationLink {
+                            CharacterDetails()
+                        } label: {
+                            CharacterRow()
+                                .listRowSeparator(.hidden)
+                                .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
+                        }
                     }
                 }
                 .listStyle(PlainListStyle())
