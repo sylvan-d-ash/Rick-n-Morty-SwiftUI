@@ -11,7 +11,7 @@ struct ContentView: View {
     private let statuses = Character.Status.allCases
     @State private var selectedStatus: Character.Status?
 
-    private let characters = [1, 2, 3, 4, 5, 6, 7, 8]
+    @StateObject private var viewModel = CharactersViewModel(service: DataService())
 
     var body: some View {
         NavigationStack {
@@ -46,14 +46,14 @@ struct ContentView: View {
                 .padding(.horizontal)
 
                 List {
-                    ForEach(characters, id: \.self) { character in
+                    ForEach(viewModel.characters, id: \.id) { character in
                         ZStack {
-                            NavigationLink(destination: CharacterDetails()) {
+                            NavigationLink(destination: CharacterDetails(character: character)) {
                                 EmptyView()
                             }
                             .opacity(0)
 
-                            CharacterRow()
+                            CharacterRow(character: character)
                         }
                         .listRowSeparator(.hidden)
                         .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
@@ -64,6 +64,12 @@ struct ContentView: View {
                 .padding(.horizontal)
             }
             .navigationTitle("Characters")
+            .task {
+                await viewModel.fetchCharacters()
+            }
+            .refreshable {
+                await viewModel.fetchCharacters()
+            }
         }
     }
 }
