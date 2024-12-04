@@ -12,7 +12,13 @@
 
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:Rick n Morty Characters.xcodeproj",
+        "identifier" : "5ECD4E4E2CFDF102002715E5",
+        "name" : "Rick n Morty CharactersTests"
+      }
+    }
   ],
   "version" : 1
 }
