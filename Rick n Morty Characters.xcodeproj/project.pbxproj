@@ -11,26 +11,19 @@
 		5ECD4E452CFDF100002715E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E442CFDF100002715E5 /* ContentView.swift */; };
 		5ECD4E472CFDF102002715E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECD4E462CFDF102002715E5 /* Assets.xcassets */; };
 		5ECD4E4A2CFDF102002715E5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECD4E492CFDF102002715E5 /* Preview Assets.xcassets */; };
-		5ECD4E542CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E532CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift */; };
-		5ECD4E5E2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E5D2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift */; };
-		5ECD4E602CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */; };
 		5ECD4E6D2CFDF132002715E5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E6C2CFDF132002715E5 /* Character.swift */; };
 		5ECD4E6F2CFF1210002715E5 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E6E2CFF1210002715E5 /* CharacterRow.swift */; };
 		5ECD4E712CFF26DE002715E5 /* CharacterDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */; };
 		5ECD4E732CFFA02B002715E5 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */; };
 		5ECD4E752CFFA608002715E5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E742CFFA608002715E5 /* DataService.swift */; };
 		5ECD4E772CFFB49C002715E5 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E762CFFB49C002715E5 /* FiltersView.swift */; };
+		5ECD4E892D008A38002715E5 /* CharactersViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E882D008A38002715E5 /* CharactersViewModelSpec.swift */; };
+		5ECD4E8C2D008B2B002715E5 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E8B2D008B2B002715E5 /* Quick */; };
+		5ECD4E8E2D008B48002715E5 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E8D2D008B48002715E5 /* Nimble */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5ECD4E502CFDF102002715E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5ECD4E372CFDF100002715E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5ECD4E3E2CFDF100002715E5;
-			remoteInfo = "Rick n Morty Characters";
-		};
-		5ECD4E5A2CFDF102002715E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5ECD4E372CFDF100002715E5 /* Project object */;
 			proxyType = 1;
@@ -46,16 +39,13 @@
 		5ECD4E462CFDF102002715E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5ECD4E492CFDF102002715E5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5ECD4E4F2CFDF102002715E5 /* Rick n Morty CharactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick n Morty CharactersTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ECD4E532CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersTests.swift; sourceTree = "<group>"; };
-		5ECD4E592CFDF102002715E5 /* Rick n Morty CharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Rick n Morty CharactersUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ECD4E5D2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersUITests.swift; sourceTree = "<group>"; };
-		5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5ECD4E6C2CFDF132002715E5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		5ECD4E6E2CFF1210002715E5 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
 		5ECD4E702CFF26DE002715E5 /* CharacterDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetails.swift; sourceTree = "<group>"; };
 		5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		5ECD4E742CFFA608002715E5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5ECD4E762CFFB49C002715E5 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		5ECD4E882D008A38002715E5 /* CharactersViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,13 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5ECD4E562CFDF102002715E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5ECD4E8C2D008B2B002715E5 /* Quick in Frameworks */,
+				5ECD4E8E2D008B48002715E5 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +73,8 @@
 			children = (
 				5ECD4E412CFDF100002715E5 /* Rick n Morty Characters */,
 				5ECD4E522CFDF102002715E5 /* Rick n Morty CharactersTests */,
-				5ECD4E5C2CFDF102002715E5 /* Rick n Morty CharactersUITests */,
 				5ECD4E402CFDF100002715E5 /* Products */,
+				5ECD4E8A2D008B2B002715E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +83,6 @@
 			children = (
 				5ECD4E3F2CFDF100002715E5 /* Rick n Morty Characters.app */,
 				5ECD4E4F2CFDF102002715E5 /* Rick n Morty CharactersTests.xctest */,
-				5ECD4E592CFDF102002715E5 /* Rick n Morty CharactersUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,18 +115,16 @@
 		5ECD4E522CFDF102002715E5 /* Rick n Morty CharactersTests */ = {
 			isa = PBXGroup;
 			children = (
-				5ECD4E532CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift */,
+				5ECD4E882D008A38002715E5 /* CharactersViewModelSpec.swift */,
 			);
 			path = "Rick n Morty CharactersTests";
 			sourceTree = "<group>";
 		};
-		5ECD4E5C2CFDF102002715E5 /* Rick n Morty CharactersUITests */ = {
+		5ECD4E8A2D008B2B002715E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5ECD4E5D2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift */,
-				5ECD4E5F2CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift */,
 			);
-			path = "Rick n Morty CharactersUITests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,27 +161,13 @@
 				5ECD4E512CFDF102002715E5 /* PBXTargetDependency */,
 			);
 			name = "Rick n Morty CharactersTests";
+			packageProductDependencies = (
+				5ECD4E8B2D008B2B002715E5 /* Quick */,
+				5ECD4E8D2D008B48002715E5 /* Nimble */,
+			);
 			productName = "Rick n Morty CharactersTests";
 			productReference = 5ECD4E4F2CFDF102002715E5 /* Rick n Morty CharactersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5ECD4E582CFDF102002715E5 /* Rick n Morty CharactersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5ECD4E692CFDF103002715E5 /* Build configuration list for PBXNativeTarget "Rick n Morty CharactersUITests" */;
-			buildPhases = (
-				5ECD4E552CFDF102002715E5 /* Sources */,
-				5ECD4E562CFDF102002715E5 /* Frameworks */,
-				5ECD4E572CFDF102002715E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5ECD4E5B2CFDF102002715E5 /* PBXTargetDependency */,
-			);
-			name = "Rick n Morty CharactersUITests";
-			productName = "Rick n Morty CharactersUITests";
-			productReference = 5ECD4E592CFDF102002715E5 /* Rick n Morty CharactersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,10 +186,6 @@
 						CreatedOnToolsVersion = 15.0.1;
 						TestTargetID = 5ECD4E3E2CFDF100002715E5;
 					};
-					5ECD4E582CFDF102002715E5 = {
-						CreatedOnToolsVersion = 15.0.1;
-						TestTargetID = 5ECD4E3E2CFDF100002715E5;
-					};
 				};
 			};
 			buildConfigurationList = 5ECD4E3A2CFDF100002715E5 /* Build configuration list for PBXProject "Rick n Morty Characters" */;
@@ -233,13 +197,16 @@
 				Base,
 			);
 			mainGroup = 5ECD4E362CFDF100002715E5;
+			packageReferences = (
+				5ECD4E862D0089E4002715E5 /* XCRemoteSwiftPackageReference "Quick" */,
+				5ECD4E872D008A1B002715E5 /* XCRemoteSwiftPackageReference "Nimble" */,
+			);
 			productRefGroup = 5ECD4E402CFDF100002715E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				5ECD4E3E2CFDF100002715E5 /* Rick n Morty Characters */,
 				5ECD4E4E2CFDF102002715E5 /* Rick n Morty CharactersTests */,
-				5ECD4E582CFDF102002715E5 /* Rick n Morty CharactersUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -255,13 +222,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5ECD4E4D2CFDF102002715E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5ECD4E572CFDF102002715E5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -290,16 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ECD4E542CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5ECD4E552CFDF102002715E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5ECD4E602CFDF102002715E5 /* Rick_n_Morty_CharactersUITestsLaunchTests.swift in Sources */,
-				5ECD4E5E2CFDF102002715E5 /* Rick_n_Morty_CharactersUITests.swift in Sources */,
+				5ECD4E892D008A38002715E5 /* CharactersViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,11 +261,6 @@
 			isa = PBXTargetDependency;
 			target = 5ECD4E3E2CFDF100002715E5 /* Rick n Morty Characters */;
 			targetProxy = 5ECD4E502CFDF102002715E5 /* PBXContainerItemProxy */;
-		};
-		5ECD4E5B2CFDF102002715E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5ECD4E3E2CFDF100002715E5 /* Rick n Morty Characters */;
-			targetProxy = 5ECD4E5A2CFDF102002715E5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -536,42 +482,6 @@
 			};
 			name = Release;
 		};
-		5ECD4E6A2CFDF103002715E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KL48363826;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Rick-n-Morty-CharactersUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Rick n Morty Characters";
-			};
-			name = Debug;
-		};
-		5ECD4E6B2CFDF103002715E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KL48363826;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.daitensai.Rick-n-Morty-CharactersUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Rick n Morty Characters";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,16 +512,39 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5ECD4E692CFDF103002715E5 /* Build configuration list for PBXNativeTarget "Rick n Morty CharactersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5ECD4E6A2CFDF103002715E5 /* Debug */,
-				5ECD4E6B2CFDF103002715E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ECD4E862D0089E4002715E5 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5ECD4E872D008A1B002715E5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ECD4E8B2D008B2B002715E5 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E862D0089E4002715E5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		5ECD4E8D2D008B48002715E5 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E872D008A1B002715E5 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5ECD4E372CFDF100002715E5 /* Project object */;
 }
