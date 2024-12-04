@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Character: Decodable, Identifiable {
+struct Character: Decodable, Identifiable, Equatable {
     enum Gender: String, Decodable {
         case female = "Female"
         case male = "Male"
@@ -55,4 +55,13 @@ extension Character {
         let _location = try container.decode(Location.self, forKey: .location)
         location = _location.name
     }
+}
+
+struct CharactersResponse: Decodable {
+    let results: [Character]
+    let info: PaginationInfo
+}
+
+struct PaginationInfo: Decodable {
+    let next: String?
 }

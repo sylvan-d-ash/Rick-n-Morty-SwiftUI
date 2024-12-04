@@ -16,21 +16,29 @@ final class CharactersViewModel: ObservableObject {
 
     private let service: CharacterService
     private var allCharacters: [Character] = []
+    private var currentPage = 1
+    private var canLoadMore = true
 
     init(service: CharacterService) {
         self.service = service
     }
 
     func fetchCharacters() async {
+        guard !isLoading else { return }
         isLoading = true
         errorMessage = nil
 
-        do {
-            let results = try await service.fetchCharacters()
-            allCharacters = results
-            characters = results
-        } catch {
-            errorMessage = error.localizedDescription
+        let results = await service.fetchCharacters(page: currentPage)
+
+        switch results {
+        case .success(let response):
+            allCharacters.append(contentsOf: response.results)
+            characters = allCharacters
+
+            if response.info.next == nil {
+                canLoadMore = false
+            }
+        case .failure(let error):
             print("Error: \(error.localizedDescription)")
         }
 
@@ -43,5 +51,11 @@ final class CharactersViewModel: ObservableObject {
         } else {
             characters = allCharacters
         }
+    }
+
+    func loadMore() async {
+        guard canLoadMore else { return }
+        currentPage += 1
+        await fetchCharacters()
     }
 }

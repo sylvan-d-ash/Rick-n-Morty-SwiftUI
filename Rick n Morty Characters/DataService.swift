@@ -8,23 +8,23 @@
 import Foundation
 
 protocol CharacterService {
-    func fetchCharacters() async throws -> [Character]
-}
-
-private struct CharactersAPIResponse: Decodable {
-    let results: [Character]
+    func fetchCharacters(page: Int) async -> Result<CharactersResponse, Error>
 }
 
 class DataService: CharacterService {
     private let baseUrl = "https://rickandmortyapi.com/api/character"
 
-    func fetchCharacters() async throws -> [Character] {
-        guard let url = URL(string: baseUrl) else {
-            throw URLError(.badURL)
+    func fetchCharacters(page: Int) async -> Result<CharactersResponse, Error> {
+        guard let url = URL(string: baseUrl + "?page=\(page)") else {
+            return .failure(URLError(.badURL))
         }
 
-        let (data, _) = try await URLSession.shared.data(from: url)
-        let response = try JSONDecoder().decode(CharactersAPIResponse.self, from: data)
-        return response.results
+        do {
+            let (data, _) = try await URLSession.shared.data(from: url)
+            let response = try JSONDecoder().decode(CharactersResponse.self, from: data)
+            return .success(response)
+        } catch {
+            return .failure(error)
+        }
     }
 }

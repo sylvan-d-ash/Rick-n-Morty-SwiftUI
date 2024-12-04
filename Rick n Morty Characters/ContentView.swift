@@ -30,10 +30,22 @@ struct ContentView: View {
                             .opacity(0)
 
                             CharacterRow(character: character)
+                                .onAppear {
+                                    if viewModel.characters.last == character {
+                                        Task {
+                                            await viewModel.loadMore()
+                                        }
+                                    }
+                                }
                         }
                         .listRowSeparator(.hidden)
                         .listRowInsets(EdgeInsets(top: 7.5, leading: 0, bottom: 7.5, trailing: 0))
                         .listRowBackground(Color.clear)
+                    }
+
+                    if viewModel.isLoading {
+                        ProgressView()
+                            .padding()
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -41,9 +53,6 @@ struct ContentView: View {
             }
             .navigationTitle("Characters")
             .task {
-                await viewModel.fetchCharacters()
-            }
-            .refreshable {
                 await viewModel.fetchCharacters()
             }
         }
