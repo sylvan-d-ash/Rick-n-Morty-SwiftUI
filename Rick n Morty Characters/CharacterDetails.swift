@@ -13,71 +13,75 @@ struct CharacterDetails: View {
     var character: Character
 
     var body: some View {
-        VStack(spacing: 20) {
-            ZStack(alignment: .topLeading) {
-                AsyncImage(url: URL(string: character.image)) { image in
-                    image
-                        .resizable()
-                        .scaledToFit()
-                        .clipShape(RoundedRectangle(cornerRadius: 20))
-                } placeholder: {
-                    ProgressView()
-                }
+        GeometryReader { geometry in
+            VStack(spacing: 20) {
+                ZStack(alignment: .topLeading) {
+                    AsyncImage(url: URL(string: character.image)) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
+                    } placeholder: {
+                        ProgressView()
+                    }
 
-                Button(action: {
-                    dismiss()
-                }) {
-                    Image(systemName: "arrow.left")
-                        .foregroundStyle(.black)
-                        .padding()
-                        .background(Circle().fill(Color.white))
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Image(systemName: "arrow.left")
+                            .foregroundStyle(.black)
+                            .padding()
+                            .background(Circle().fill(Color.white))
+                    }
+                    .padding(.horizontal, 16)
+                    .padding(.top, geometry.safeAreaInsets.top)
                 }
-                .padding(16)
-            }
+                .ignoresSafeArea()
 
-            VStack {
+                VStack {
+                    HStack {
+                        Text(character.name)
+                            .font(.title)
+                            .fontWeight(.bold)
+
+                        Spacer()
+
+                        Text(character.status.rawValue)
+                            .font(.subheadline)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 6)
+                            .background(
+                                Capsule()
+                                    .fill(Color.cyan)
+                            )
+                    }
+
+                    HStack(spacing: 5) {
+                        Text(character.species)
+                        Text("•")
+                        Text(character.gender.rawValue)
+                            .foregroundStyle(.gray)
+                        Spacer()
+                    }
+                    .font(.subheadline)
+                }
+                .padding(.horizontal)
+                .padding(.top, -geometry.safeAreaInsets.top)
+
                 HStack {
-                    Text(character.name)
-                        .font(.title)
+                    Text("Location :")
                         .fontWeight(.bold)
 
-                    Spacer()
-
-                    Text(character.status.rawValue)
+                    Text(character.location)
                         .font(.subheadline)
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 6)
-                        .background(
-                            Capsule()
-                                .fill(Color.cyan)
-                        )
-                }
-
-                HStack(spacing: 5) {
-                    Text(character.species)
-                    Text("•")
-                    Text(character.gender.rawValue)
-                        .foregroundStyle(.gray)
                     Spacer()
                 }
-                .font(.subheadline)
-            }
-            .padding(.horizontal)
+                .padding(.horizontal)
 
-            HStack {
-                Text("Location :")
-                    .fontWeight(.bold)
-
-                Text(character.location)
-                    .font(.subheadline)
                 Spacer()
             }
-            .padding(.horizontal)
-
-            Spacer()
         }
         .toolbar(.hidden, for: .navigationBar)
-        .ignoresSafeArea()
     }
 }
 
