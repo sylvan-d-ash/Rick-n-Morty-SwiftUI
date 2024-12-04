@@ -10,16 +10,6 @@ import Quick
 import Nimble
 @testable import Rick_n_Morty_Characters
 
-final class MockCharacterService: CharacterService {
-    var fetchCharactersResult: Result<CharactersResponse, Error>?
-    private(set) var page: Int?
-
-    func fetchCharacters(page: Int) async -> Result<CharactersResponse, Error> {
-        self.page = page
-        return fetchCharactersResult!
-    }
-}
-
 final class CharactersViewModelSpec: AsyncSpec {
     override class func spec() {
         var sut: CharactersViewModel!

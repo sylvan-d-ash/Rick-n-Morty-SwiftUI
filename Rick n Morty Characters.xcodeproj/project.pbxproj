@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EC7C0E72D009D0B00616634 /* MockCharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC7C0E62D009D0B00616634 /* MockCharacterService.swift */; };
 		5ECD4E432CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E422CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift */; };
 		5ECD4E452CFDF100002715E5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E442CFDF100002715E5 /* ContentView.swift */; };
 		5ECD4E472CFDF102002715E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECD4E462CFDF102002715E5 /* Assets.xcassets */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EC7C0E52D009BC500616634 /* Rick n Morty Characters.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rick n Morty Characters.xctestplan"; sourceTree = SOURCE_ROOT; };
+		5EC7C0E62D009D0B00616634 /* MockCharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterService.swift; sourceTree = "<group>"; };
 		5ECD4E3F2CFDF100002715E5 /* Rick n Morty Characters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rick n Morty Characters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECD4E422CFDF100002715E5 /* Rick_n_Morty_CharactersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rick_n_Morty_CharactersApp.swift; sourceTree = "<group>"; };
 		5ECD4E442CFDF100002715E5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,7 +118,9 @@
 		5ECD4E522CFDF102002715E5 /* Rick n Morty CharactersTests */ = {
 			isa = PBXGroup;
 			children = (
+				5EC7C0E62D009D0B00616634 /* MockCharacterService.swift */,
 				5ECD4E882D008A38002715E5 /* CharactersViewModelSpec.swift */,
+				5EC7C0E52D009BC500616634 /* Rick n Morty Characters.xctestplan */,
 			);
 			path = "Rick n Morty CharactersTests";
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ECD4E892D008A38002715E5 /* CharactersViewModelSpec.swift in Sources */,
+				5EC7C0E72D009D0B00616634 /* MockCharacterService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
