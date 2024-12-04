@@ -18,7 +18,7 @@ struct ContentView: View {
                 FiltersView(selectedStatus: $selectedStatus)
                 .padding(.horizontal)
                 .onChange(of: selectedStatus) { oldStatus, newStatus in
-                    print("Old: \(oldStatus?.rawValue ?? "nil") | New: \(newStatus?.rawValue ?? "nil")")
+                    viewModel.filterCharacters(withStatus: newStatus)
                 }
 
                 List {
