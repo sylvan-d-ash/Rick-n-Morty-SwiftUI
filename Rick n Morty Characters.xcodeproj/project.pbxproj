@@ -20,6 +20,12 @@
 		5ECD4E732CFFA02B002715E5 /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */; };
 		5ECD4E752CFFA608002715E5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E742CFFA608002715E5 /* DataService.swift */; };
 		5ECD4E772CFFB49C002715E5 /* FiltersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E762CFFB49C002715E5 /* FiltersView.swift */; };
+		5ECD4E7A2D007F4E002715E5 /* Nimble in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E792D007F4E002715E5 /* Nimble */; };
+		5ECD4E7D2D007FAC002715E5 /* Quick in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E7C2D007FAC002715E5 /* Quick */; };
+		5ECD4E7F2D007FAC002715E5 /* QuickLint in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E7E2D007FAC002715E5 /* QuickLint */; };
+		5ECD4E812D007FAC002715E5 /* quicklint in Frameworks */ = {isa = PBXBuildFile; productRef = 5ECD4E802D007FAC002715E5 /* quicklint */; };
+		5ECD4E832D007FF6002715E5 /* MockCharacterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E822D007FF6002715E5 /* MockCharacterService.swift */; };
+		5ECD4E852D00809A002715E5 /* CharactersViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECD4E842D00809A002715E5 /* CharactersViewModelSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,8 @@
 		5ECD4E722CFFA02B002715E5 /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
 		5ECD4E742CFFA608002715E5 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		5ECD4E762CFFB49C002715E5 /* FiltersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersView.swift; sourceTree = "<group>"; };
+		5ECD4E822D007FF6002715E5 /* MockCharacterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCharacterService.swift; sourceTree = "<group>"; };
+		5ECD4E842D00809A002715E5 /* CharactersViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModelSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD4E7F2D007FAC002715E5 /* QuickLint in Frameworks */,
+				5ECD4E812D007FAC002715E5 /* quicklint in Frameworks */,
+				5ECD4E7D2D007FAC002715E5 /* Quick in Frameworks */,
+				5ECD4E7A2D007F4E002715E5 /* Nimble in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				5ECD4E532CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift */,
+				5ECD4E822D007FF6002715E5 /* MockCharacterService.swift */,
+				5ECD4E842D00809A002715E5 /* CharactersViewModelSpec.swift */,
 			);
 			path = "Rick n Morty CharactersTests";
 			sourceTree = "<group>";
@@ -179,6 +193,12 @@
 				5ECD4E512CFDF102002715E5 /* PBXTargetDependency */,
 			);
 			name = "Rick n Morty CharactersTests";
+			packageProductDependencies = (
+				5ECD4E792D007F4E002715E5 /* Nimble */,
+				5ECD4E7C2D007FAC002715E5 /* Quick */,
+				5ECD4E7E2D007FAC002715E5 /* QuickLint */,
+				5ECD4E802D007FAC002715E5 /* quicklint */,
+			);
 			productName = "Rick n Morty CharactersTests";
 			productReference = 5ECD4E4F2CFDF102002715E5 /* Rick n Morty CharactersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -233,6 +253,10 @@
 				Base,
 			);
 			mainGroup = 5ECD4E362CFDF100002715E5;
+			packageReferences = (
+				5ECD4E782D007F4E002715E5 /* XCRemoteSwiftPackageReference "Nimble" */,
+				5ECD4E7B2D007FAC002715E5 /* XCRemoteSwiftPackageReference "Quick" */,
+			);
 			productRefGroup = 5ECD4E402CFDF100002715E5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -290,7 +314,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECD4E852D00809A002715E5 /* CharactersViewModelSpec.swift in Sources */,
 				5ECD4E542CFDF102002715E5 /* Rick_n_Morty_CharactersTests.swift in Sources */,
+				5ECD4E832D007FF6002715E5 /* MockCharacterService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +638,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5ECD4E782D007F4E002715E5 /* XCRemoteSwiftPackageReference "Nimble" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Nimble.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5ECD4E7B2D007FAC002715E5 /* XCRemoteSwiftPackageReference "Quick" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Quick/Quick.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5ECD4E792D007F4E002715E5 /* Nimble */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E782D007F4E002715E5 /* XCRemoteSwiftPackageReference "Nimble" */;
+			productName = Nimble;
+		};
+		5ECD4E7C2D007FAC002715E5 /* Quick */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E7B2D007FAC002715E5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = Quick;
+		};
+		5ECD4E7E2D007FAC002715E5 /* QuickLint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E7B2D007FAC002715E5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = QuickLint;
+		};
+		5ECD4E802D007FAC002715E5 /* quicklint */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5ECD4E7B2D007FAC002715E5 /* XCRemoteSwiftPackageReference "Quick" */;
+			productName = quicklint;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5ECD4E372CFDF100002715E5 /* Project object */;
 }
