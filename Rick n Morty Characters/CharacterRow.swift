@@ -39,7 +39,14 @@ struct CharacterRow: View {
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 12)
-                .strokeBorder(Color.purple.opacity(0.2), lineWidth: 1)
+                .strokeBorder(
+                    character.status == .unknown ? Color.purple.opacity(0.2) : Color.clear,
+                    lineWidth: 1
+                )
+        )
+        .background(
+            character.status.color
+                .clipShape(RoundedRectangle(cornerRadius: 12))
         )
     }
 }
@@ -55,4 +62,14 @@ struct CharacterRow: View {
     )
 
     return CharacterRow(character: character)
+}
+
+private extension Character.Status {
+    var color: Color {
+        switch self {
+        case .alive: return Color(red: 0.917, green: 0.966, blue: 0.991)
+        case .dead: return Color(red: 1.001, green: 0.902, blue: 0.922)
+        case .unknown: return .white
+        }
+    }
 }
