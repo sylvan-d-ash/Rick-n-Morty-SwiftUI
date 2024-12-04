@@ -10,8 +10,8 @@ import Combine
 
 @MainActor
 final class CharactersViewModel: ObservableObject {
-    @Published var characters: [Character] = []
-    @Published var isLoading: Bool = false
+    @Published private(set) var characters: [Character] = []
+    @Published private(set) var isLoading: Bool = false
     @Published var errorMessage: String?
 
     private let service: CharacterService
@@ -40,7 +40,7 @@ final class CharactersViewModel: ObservableObject {
                 canLoadMore = false
             }
         case .failure(let error):
-            print("Error: \(error.localizedDescription)")
+            errorMessage = "Failted to fetch characters: \(error.localizedDescription)"
         }
 
         isLoading = false

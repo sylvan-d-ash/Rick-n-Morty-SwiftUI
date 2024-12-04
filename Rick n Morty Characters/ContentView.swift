@@ -55,6 +55,17 @@ struct ContentView: View {
             .task {
                 await viewModel.fetchCharacters()
             }
+            .alert(
+                "Error",
+                isPresented: Binding(
+                    get: { viewModel.errorMessage != nil },
+                    set: { if !$0 { viewModel.errorMessage = nil }}
+                ),
+                presenting: viewModel.errorMessage) { _ in
+                    Button("Cancel", role: .cancel) {}
+                } message: { message in
+                    Text(message)
+                }
         }
     }
 }
