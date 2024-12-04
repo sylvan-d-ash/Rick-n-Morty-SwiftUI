@@ -18,6 +18,7 @@ final class CharactersViewModel: ObservableObject {
     private var allCharacters: [Character] = []
     private var currentPage = 1
     private var canLoadMore = true
+    private var filter: Character.Status?
 
     init(service: CharacterService) {
         self.service = service
@@ -33,7 +34,7 @@ final class CharactersViewModel: ObservableObject {
         switch results {
         case .success(let response):
             allCharacters.append(contentsOf: response.results)
-            characters = allCharacters
+            filterCharacters(withStatus: filter)
 
             if response.info.next == nil {
                 canLoadMore = false
@@ -46,6 +47,8 @@ final class CharactersViewModel: ObservableObject {
     }
 
     func filterCharacters(withStatus status: Character.Status?) {
+        self.filter = status
+
         if let status = status {
             characters = allCharacters.filter { $0.status == status }
         } else {
