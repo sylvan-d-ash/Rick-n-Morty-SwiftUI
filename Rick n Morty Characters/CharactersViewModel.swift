@@ -40,7 +40,7 @@ final class CharactersViewModel: ObservableObject {
                 canLoadMore = false
             }
         case .failure(let error):
-            errorMessage = "Failted to fetch characters: \(error.localizedDescription)"
+            errorMessage = "Failed to fetch characters: \(error.localizedDescription)"
         }
 
         isLoading = false
