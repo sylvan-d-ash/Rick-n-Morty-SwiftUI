@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var selectedStatus: Character.Status?
 
-    @StateObject private var viewModel = CharactersViewModel(service: DataService())
+    @StateObject private var viewModel = CharactersViewModel()
 
     var body: some View {
         NavigationStack {
