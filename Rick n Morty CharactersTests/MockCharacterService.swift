@@ -8,7 +8,7 @@
 import Foundation
 @testable import Rick_n_Morty_Characters
 
-final class MockCharacterService: CharacterService {
+final class MockCharacterService: CharacterServiceProtocol {
     var fetchCharactersResult: Result<CharactersResponse, Error>?
     private(set) var page: Int?
 

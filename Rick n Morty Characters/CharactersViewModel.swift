@@ -14,13 +14,13 @@ final class CharactersViewModel: ObservableObject {
     @Published private(set) var isLoading: Bool = false
     @Published var errorMessage: String?
 
-    private let service: CharacterService
+    private let service: CharacterServiceProtocol
     private var allCharacters: [Character] = []
     private var currentPage = 1
     private var canLoadMore = true
     private var filter: Character.Status?
 
-    init(service: CharacterService) {
+    init(service: CharacterServiceProtocol = CharacterService()) {
         self.service = service
     }
 
