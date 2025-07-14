@@ -1,8 +1,6 @@
 # Rick n Morty SwiftUI
 
-## Description
-
-A SwiftUI sample application using the [Rick And Morty API](https://rickandmortyapi.com/documentation/#)
+The Rick n Morty SwiftUI app is a sample application that demonstrates the use of SwiftUI for building modern iOS interfaces. It integrates with the [Rick And Morty API](https://rickandmortyapi.com/documentation/#) to fetch and display character data. The project features an abstracted API client and character service to enhance modularity and maintainability. Comprehensive tests are implemented using XCTest to ensure the reliability of the view models. The app showcases the use of SwiftUI's declarative syntax for building responsive and dynamic user interfaces.
 
 ## Screenshots
 
